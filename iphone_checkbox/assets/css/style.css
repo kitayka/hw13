@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	text-align: center;
+}
+
+label {
+	margin-top: 50vh;
+	transform: translateY(-50%);
+	display: inline-block;
+	box-sizing: border-box;
+	width: 155px;
+	height: 80px;
+	background-color: lightgrey;
+	border-radius: 40px;
+	position: relative;
+	cursor: pointer;
+}
+
+label::before {
+	content: '';
+	display: block;
+	position: absolute;
+	background-color: white;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	top: 5px;
+	left: 5px;
+}
+
+input {
+	display: none;
+}
+
+input:checked + label::before {
+	display: none;
+}
+
+input:checked + label {
+	background-color: #6edc5f;
+}
+
+input:checked + label::after {
+	content: '';
+	display: block;
+	position: absolute;
+	background-color: white;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	top: 5px;
+	right: 5px;
+}
+
