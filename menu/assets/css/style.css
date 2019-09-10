@@ -6,13 +6,16 @@ box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	position: relative;
 }
 
 .list {
 
 	display: inline-block;
 	background-color: #f1f1f1;
+}
+
+.list_position {
+	position: relative;
 }
 
 .link {
@@ -34,7 +37,6 @@ box-sizing: border-box;
 .dropdown_menu {
 	display: none;
 	position: absolute;
-	top: 100%;
 }
 
 .list:hover > .dropdown_menu {

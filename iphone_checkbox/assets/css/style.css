@@ -3,7 +3,7 @@ body {
 	text-align: center;
 }
 
-label {
+.wrap {
 	margin-top: 50vh;
 	transform: translateY(-50%);
 	display: inline-block;
@@ -16,7 +16,7 @@ label {
 	cursor: pointer;
 }
 
-label::before {
+.wrap::before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -25,22 +25,18 @@ label::before {
 	height: 70px;
 	border-radius: 50%;
 	top: 5px;
-	left: 5px;
+	margin-left: 5px;
 }
 
-input {
+#iphone_checkbox {
 	display: none;
 }
 
-input:checked + label::before {
-	display: none;
-}
-
-input:checked + label {
+#iphone_checkbox:checked + .wrap {
 	background-color: #6edc5f;
 }
 
-input:checked + label::after {
+#iphone_checkbox:checked + .wrap::before {
 	content: '';
 	display: block;
 	position: absolute;
