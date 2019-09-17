@@ -37,14 +37,6 @@ body {
 }
 
 #iphone_checkbox:checked + .wrap::before {
-	content: '';
-	display: block;
-	position: absolute;
-	background-color: white;
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	top: 5px;
 	right: 5px;
 }
 
