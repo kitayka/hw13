@@ -37,6 +37,8 @@ box-sizing: border-box;
 .dropdown_menu {
 	display: none;
 	position: absolute;
+	left: 0;
+	top: 100%;
 }
 
 .list:hover > .dropdown_menu {
